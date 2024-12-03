@@ -1,0 +1,61 @@
+body{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+#formSection{
+    padding-top:4em;
+}
+form{
+    width: 55%;
+    margin: 0 auto;
+}
+
+.box{
+    margin: 1.5em;
+}
+
+legend{
+    font-size: xx-large;
+    text-align: center;
+}
+
+label{
+    font-size: x-large;
+}
+
+span{
+    color: red;
+}
+
+[type='text'], [type='email'] {
+    width: 75%;
+    float: right;
+}
+
+[readonly]{
+    width:60%;
+}
+
+[type='button']{
+    vertical-align: top;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 1em;
+}
+
+#fields{
+
+    overflow: hidden;
+}
+
+#payments{
+    float: left;
+}
+
+#choose{
+    width:50%;
+    float: right
+}
+
+#myButtons{
+}

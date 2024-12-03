@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Form">
+    <meta name="keywords" content="Form">
+    <meta name="author" content="Gabriel Freitas">
+    <link rel="stylesheet" href="assets/main.css">
+    <title>Lab 10 exercise</title>
+</head>
+<body>
+
+<form id="comment-form">
+    <fieldset>
+        <legend>Comment Form</legend>
+        <label id="your-name-label">Your Name: <span>*</span></label>
+        <input type="text" id="first-name" placeholder="First" required>
+        <input type="text" id="last-name" placeholder="Last" required>
+
+        <label id="email-label">Email: <span>*</span></label>
+        <input type="email" name="email" id="email" required>
+
+        <label id="subject-label">Subject of comment:</label>
+        <select id="subject">
+            <option value="problem">Problem</option>
+            <option value="comment">Comment</option>
+            <option value="question">General Question</option>
+        </select>
+
+        <label id="comments-label">Comments: <span>*</span></label>
+        <textarea id="comments" required></textarea>
+
+        <input id="submitbottom" type="submit" value="Submit">
+    </fieldset>
+</form>
+
+<script src=https://my.gblearn.com/js/loadscript.js></script>
+</body>
+</html>

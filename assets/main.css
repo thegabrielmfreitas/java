@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+#comment-form {
+    padding: 50px;
+    width: 600px;
+    margin: auto;
+    height: 320px;
+}
+
+
+#your-name-label {
+    display: block;
+    margin-top: 10px;
+    width: 100px;
+}
+
+#first-name, #last-name {
+    display: inline-block;
+    width: 288px;
+    margin-top: 10px;
+}
+
+#email-label {
+    display: block;
+    margin-top: 10px;
+    width: 27.1rem;
+}
+
+#email {
+    width: 590px;
+    margin-top: 10px;
+}
+
+#subject-label {
+    display: block;
+    margin-top: 10px;
+    width: 500px;
+}
+
+#subject {
+    display: block;
+    margin-top: 10px;
+    width: 597px;
+
+}
+
+#comments-label {
+    display: block;
+    margin-top: 10px;
+    width: 500px;
+}
+
+#comments {
+    display: block;
+    width: 590px;
+    margin-top: 10px;
+}
+
+#submitbottom {
+    padding: 10px;
+    background-color: #c45cd6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+span {
+    color: red;
+}
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/main_lab.css">
+</head>
+<body>
+
+<section id="formSection">
+    <h3>Form</h3>
+    <form method="get" action="http://comp1234.gblearn.com/winter2024/lecture/wk10/WhereToSendThisInformation.php">
+        <fieldset>
+            <legend>Form Section (<span>*</span> required)</legend>
+            <div class="box">
+                <label for="name">Full Name: <span>*</span></label>
+                <input type="text" name="fname" id="name" required>
+            </div>
+
+            <div class="box">
+                <label for="email">Email: <span>*</span></label>
+                <input type="text" name="fname" id="email" required>
+            </div>
+
+            <div class="box">
+                <label for="colourbox">Colour</label>
+                <input type="color" name="colourBox" id="colourbox">
+                <input type="button" value="Colour Change" onclick="colourChange()">
+                <input type="text" name="colourtext" id="cbox" readonly>
+            </div>
+
+            <div class="box">
+                <label for="colourlist">Drop down Colour List</label>
+                <select name="colourList" id="colourlist">
+                    <option value="red">red</option>
+                    <option value="rgb(0,255,0)">green</option>
+                    <option value="#0000ff">blue</option>
+                </select>
+                <input type="button" value="Colour Background" onclick="colourChange()">
+            </div>
+
+            <div class="box">
+                <label for="date">DateL</label>
+                <input type="datetime-local" name="date" id="date"
+                       min="2024-03-12T08:00"
+                       max="2024-03-15T00:00">
+            </div>
+
+            <div class="box">
+                <label for="range">Number Range(1-10 step 0.5)</label>
+                <input type="range" name="range" id="range"
+                min="1" max="10" step="0.5" value="8">
+            </div>
+
+            <div id="fields">
+                <fieldset id="payments">
+                <legend>Payment Type</legend>
+                    <label for="cash">Cash:</label>
+                    <input type="radio" name="pay" id="cash" value="cash" checked>
+
+                    <label for="credit">Credit:</label>
+                    <input type="radio" name="pay" id="credit" value="credit">
+
+                </fieldset>
+
+
+                <fieldset id="choose">
+                    <legend>Favorite Items</legend>
+                    <label for="toy">SpinTop:</label>
+                    <input type="checkbox" name="ch1" id="toy" value="toy top" checked>
+                    <label for="ball">Ball:</label>
+                    <input type="checkbox" name="ch2" id="ball" value="toy ball">
+                    <label for="car">Car:</label>
+                    <input type="checkbox" name="ch3" id="car" value="toy car">
+
+
+
+                </fieldset>
+
+            </div>
+
+
+            <div id="myButtons">
+                <input type="submit">
+                <input type="reset">
+
+            </div>
+
+
+
+        </fieldset>
+    </form>
+</section>
+
+<script>
+    function colourChange(){
+        let colour=document.getElementById("colourbox").value;
+        document.body.style.backgroundColor=colour;
+        document.getElementById("cbox").value=colour;
+
+    }
+</script>
+
+</body>
+</html>
